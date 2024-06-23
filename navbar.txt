@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>navbar</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	nav{
+		width:100%;
+		height: 120px;
+		background-color:green;
+
+	}
+	.logo{
+		width:300px;
+		height: 120px;
+		background-color:green;
+		position: absolute;
+	}
+	h1{
+		font-size: 40px;
+		color:white;
+		margin-top:30px;
+		margin-left: 50px;
+	}
+	.search{
+         width: 300px;
+         height: 120px;
+	     background-color:green;
+         margin-left: 400px;
+         position: absolute;
+
+	}
+	input[type=search]{
+		width: 250px;
+		height: 30px;
+        margin-top:40px ;
+	    background-color: white;
+	    font-size: 15px;
+	}
+	.menu{
+		width: 500px;
+		height: 120px;
+		margin-left:800px;
+/*		background-color: black;*/
+		position: absolute;
+	}
+	ul{
+		margin-top: 15px;
+        display: flex;
+	}
+	li{
+		padding: 30px;
+		font-size: 25px;
+        list-style:none ;
+
+	    
+	}
+	a{
+		text-decoration: none;
+        color: white;
+
+	}
+
+    a:hover{
+		 background-color:white;
+	     border-radius: 20px;
+	     color: black;
+	     text-decoration:underline;
+	     text-decoration-color: green;
+         
+	}
+    .footer{
+    	 width:100%;
+    	 height: 600px;
+    	 background-color:black;
+    	 margin-top:800px;
+
+    }
+    .f1{
+    	width:100%;
+    	height: 50px;
+    	background-color:blueviolet;
+    }
+     .h1{
+    	    font-size: 15px;
+    	    color:white;
+            padding: 5px;
+       	    margin-left: 30px;
+    	    }
+     .f2{
+     	margin-left: 1200px;
+        margin-top: -25px;
+        color: white;
+
+     }
+     .v1{
+     	width: 250px;
+     	height: 200px;
+/*     	background-color: white;*/
+     	margin-left:70px;
+     	margin-top:50px;
+ 
+     }
+   .v2{
+     	width: 200px;
+     	height: 200px;
+/*     	background-color: white;*/
+     	margin-left:120px;
+     	margin-top:50px;
+    
+     }
+    .v3{
+     	width: 200px;
+     	height: 200px;
+/*     	background-color: white;*/
+     	margin-left:140px;
+     	margin-top:50px;
+/*     	margin-top:100px;*/
+       	    
+      }
+   .v4{
+     	width: 250px;
+     	height: 200px;
+/*     	background-color: white;*/
+     	margin-left:160px;
+/*     	margin-top:100px;*/
+     	margin-top:50px;
+
+   
+
+     }
+     .d1{
+     	width: 100%;
+     	height: 200px;
+     	display: flex;
+     }
+     i{
+     	color: white;
+
+     }
+     .b1{
+     	color: white; 
+     	margin-left: 30px;
+     	font-size: 21px;
+     	font-style: bold;
+     }
+     .b2{
+      color: white;
+      font-size: 17px;
+      margin-top:20px ;
+     }
+     ol{
+     	color: white;
+
+     }
+      ol li{
+      	font-size: 20px;
+      }
+      .l1{
+        width:1533px;
+    	height: 50px;
+      	margin-top:500px;
+      	background-color: blueviolet;
+      	margin-left: -1500px;
+      }
+       .x1{
+       	width: 100%;
+       	height: 500px;
+       	background-image: url("i1.jpg");
+       	background-size: cover;
+       	margin-top: 0px;
+       }
+</style>
+<body>
+<nav>
+	<div class="logo"><h1>Food Feasts</h1></div>
+	<div class="search"><input type="search" placeholder="Search here ..."></div>
+	<div class="menu">
+		<ul>
+			<a href="#"><li>HOME</li></a>
+			<a href="#"><li>ABOUT</li></a>
+			<a href="#"><li>CONTACT</li></a>
+			<a href="#"><li>SERVICE</li></a>
+
+		</ul>
+	</div>
+
+
+</nav>
+<div class="x1">
+	<button style="margin-top: 200px;margin-left: 500px;width:80px;height: 30px;font-size: 15px;border-radius: 5px;">Login</button>
+</div>
+	<div class="footer"><div class="f1"><p class="h1">Get connected with us on social networks:</p><p class="f2"><i class="fa-brands fa-whatsapp"></i>&nbsp &nbsp <i class="fa-brands fa-square-facebook"></i>&nbsp &nbsp<i class="fa-brands fa-square-twitter"></i>&nbsp &nbsp<i class="fa-brands fa-google"></i>&nbsp &nbsp<i class="fa-brands fa-github"></i>&nbsp &nbsp<i class="fa-brands fa-instagram"></i>&nbsp &nbsp<i class="fa-brands fa-linkedin"></i></p></div>
+	<div class="d1"><div class="v1">
+		<i class="fa-regular fa-gem i8"></i> <h class="b1">COMPANY NAME</h><br>
+		<p class="b2">Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	
+	</div>
+	<div class="v2">
+		<h style="color:white; font-size: 21px;">PRODUCTS</h>
+		<ol>
+			<li>Angular</li>
+			<li>React</li>
+			<li>Vue</li>
+			<li>Laravel</li>
+
+		</ol>
+	</div><div class="v3">
+		<h style="color: white; font-size: 21px;">USEFUL LINKS</h>
+		<ol>
+			<li>Pricing</li>
+			<li>Settings</li>
+			<li>Orders</li>
+			<li>Help</li>
+
+		</ol>
+	</div><div class="v4">
+		<h style="color: white; font-size: 20px;">CONTACT</h><br><br><br>
+      <!-- <i class="fa-solid fa-house"></i><p style="color:white; font-size:20px; margin-top: -20px; margin-left: 30px;">New York, NY 10012, US</p> -->
+      <ol>
+			 <i class="fa-solid fa-house"></i><li style="margin-top:-50px ;">New York, NY 10012, US</li><br>
+			<i class="fa-regular fa-envelope"></i><li style="margin-top:-50px;">info@example.com</li><br>
+			<i class="fa-solid fa-phone"></i><li style="margin-top:-50px">+ 01 234 567 88</li>
+			<br>
+			<i class="fa-solid fa-print"></i><li style="margin-top:-50px;"> + 01 234 567 89</li>
+
+		</ol>
+	</div>
+	<div class="l1"></div><p style="color:white; margin-top:520px; margin-left: -800px;"><i class="fa-regular fa-copyright"></i>&nbsp &nbsp  2021 Copyright: MDBootstrap.com</p></div>
+	
+</body>
+</html>
