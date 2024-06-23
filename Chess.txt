@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)file:///C:/project%20sql/chess1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>chess</title>
+<style type="">
+	.imp{
+	        width: 740px;
+		height: 650px;
+		background-color:whitesmoke;
+		border-style: groove;
+/*		border-color: black;*/
+		margin-left:600px ;
+		margin-top: 100px;
+	
+	}
+	.main{
+		width: 640px;
+		height: 550px;
+		background-color: white;
+		border-style: inset;
+		border-color: black;
+		margin-left:50px ;
+		margin-top: -15px;
+
+	}
+	.m1{
+/*		margin-top:5px;*/
+		width:100%;
+		height:100px;
+		background-color: white;
+/*		border-style: dashed;*/
+		display: flex;
+
+	}
+	.d1{
+		margin-top: 0px;
+                width: 20px;
+                height: 50px;
+		padding: 30px;
+		background-color: white;
+		
+	}
+	.d2{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+
+	.d3{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+	.d4{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+	.d5{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+	.d6{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+		.d7{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+     .d8{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+    .m2{
+		margin-left:-510px;
+/*		width:630px;*/
+                width: 100%;
+		height:100px;
+		background-color: white;
+/*		border-style: dashed;*/
+/*		display: flex;*/
+
+	}
+	.a1{
+		margin-top: 0px;
+                width: 20px;
+                height: 50px;
+		padding: 30px;
+		background-color: black;
+		
+	}
+	.a2{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+
+	.a3{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+	.a4{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+	.a5{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+	.a6{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+	.a7{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+     .a8{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+    .m3{
+		margin-left:-510px;
+/*		width:630px;*/
+                width: 100%;
+		height:100px;
+		background-color: white;
+/*		border-style: dashed;*/
+/*		display: flex;*/
+
+	}
+	.c1{
+		margin-top: 0px;
+                width: 20px;
+                height: 50px;
+		padding: 30px;
+		background-color: white;
+		
+	}
+	.c2{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+
+	.c3{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+	.c4{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+	.c5{
+		margin-left: 50px;
+		margin-top: -30px;
+        width: 20px;
+        height: 50px;
+        padding: 30px;
+		background-color: white;
+	}
+	.c6{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+    .c7{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+     .c8{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+	.m4{
+		margin-left:-510px;
+/*		width:630px;*/
+                width: 100%;
+		height:100px;
+		background-color: white;
+/*		border-style: dashed;*/
+/*		display: flex;*/
+
+	}
+	.b1{
+		margin-top: 0px;
+                width: 20px;
+                height: 50px;
+		padding: 30px;
+		background-color: black;
+		
+	}
+	.b2{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+
+	.b3{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+	.b4{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+	.b5{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+	.b6{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+    .b7{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+     .b8{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color:white ;
+	}
+	.m5{
+		margin-left:-510px;
+/*		width:630px;*/
+                width: 100%;
+		height:100px;
+		background-color: black;
+/*		border-style: dashed;*/
+/*		display: flex;*/
+
+	}
+	.w1{
+		margin-top: 0px;
+                width: 20px;
+                height: 50px;
+		padding: 30px;
+		background-color: white;
+		
+	}
+	.w2{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+
+	.w3{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+	.w4{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+	.w5{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+	.w6{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+    .w7{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: white;
+	}
+     .w8{
+		margin-left: 50px;
+		margin-top: -30px;
+                width: 20px;
+                height: 50px;
+                padding: 30px;
+		background-color: black;
+	}
+	p{
+	        font-size: 20px;
+	        margin-left:100px;
+		}
+	.p1{
+		margin-top: -450px;
+	        font-size: 20px;
+	        margin-left:70px;
+		}
+	.p2{
+		margin-top: -590px;
+	        font-size: 20px;
+	        margin-left:-620px;
+		}
+	.p3{
+
+	        font-size: 20px;
+	        margin-left:-550px;
+	        margin-top: 55px;
+/*	        
+		}
+</style></head>
+
+<body>
+	<div class="imp">
+		<p>1 &nbsp &nbsp &nbsp   &nbsp   &nbsp &nbsp  2 &nbsp   &nbsp  &nbsp &nbsp  &nbsp  &nbsp   3  &nbsp   &nbsp   &nbsp  &nbsp &nbsp &nbsp 4
+		&nbsp &nbsp &nbsp     &nbsp  &nbsp  &nbsp  5 &nbsp &nbsp    &nbsp  &nbsp   &nbsp &nbsp   &nbsp 6 &nbsp    &nbsp &nbsp &nbsp   &nbsp &nbsp   7  &nbsp    &nbsp  &nbsp    &nbsp &nbsp &nbsp  8 </p>
+	<div class="main">
+		<div class="m1">
+        <div class="d1">
+
+		
+		<div class="d2">
+		<div class="d3">
+		<div class="d4">
+		<div class="d5">
+		<div class="d6">
+		<div class="d7">
+		<div class="d8">
+		</div>
+		<div class="m2">
+		<div class="a1">
+		<div class="a2">
+		<div class="a3">
+		<div class="a4">
+		<div class="a5">
+		<div class="a6">
+		<div class="a7">
+		<div class="a8">	
+		</div>
+		<div class="m3">
+
+		<div class="c1">
+		<div class="c2">
+		<div class="c3">
+		<div class="c4">
+		<div class="c5">
+		<div class="c6">
+		<div class="c7">
+		<div class="c8">	
+		</div>
+		<div class="m4">
+		<div class="b1">
+		<div class="b2">
+		<div class="b3">
+		<div class="b4">
+		<div class="b5">
+		<div class="b6">
+		<div class="b7">
+		<div class="b8">	
+		</div>
+		<div class="m5">
+
+		<div class="w1">
+		<div class="w2">
+		<div class="w3">
+		<div class="w4">
+		<div class="w5">
+		<div class="w6">
+		<div class="w7">
+		<div class="w8">
+	        <p class="p1">a  &nbsp  &nbsp &nbsp  &nbsp b  &nbsp  &nbsp &nbsp &nbsp c &nbsp &nbsp  &nbsp  &nbsp  d &nbsp  &nbsp  &nbsp  &nbsp e  &nbsp &nbsp &nbsp  &nbsp</p>
+		<p class="p2">a &nbsp  &nbsp &nbsp  &nbsp  <br>  <br> <br><br> <br>b  &nbsp  &nbsp &nbsp &nbsp    <br> <br><br> <br><br>c &nbsp &nbsp  &nbsp  &nbsp   <br> <br> <br> <br> <br>d &nbsp  &nbsp  &nbsp  &nbsp   <br>  <br> <br><br><br>e  &nbsp &nbsp &nbsp  &nbsp</p>
+		<p class="p3" >1 &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp  2 &nbsp  &nbsp &nbsp &nbsp  &nbsp  &nbsp 3 &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp 4 &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp 5 &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp  6 &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp 7 &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp 8 </p>	
+		</div>
+	</div>
+
+
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></body></html>
